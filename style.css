@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* header menu*/
+.headermenu{
+    background-color: #3498db;
+}
+.headermenu ul{
+    text-align: center;
+}
+.headermenu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.headermenu ul li a{
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-left:  1px solid #ffffff;
+}
+.headermenu ul li:last-child{
+    border-right: 1px solid #ffffff;
+}
+.headermenu ul li:hover > a {
+    background-color: #2980b9;
+}
+/*Dropdown Menu*/
+.headermenu ul li{
+    position: relative;
+}
+.headermenu ul li ul{
+    width: 200px;
+    background-color:#3498db;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.headermenu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.headermenu ul li ul li a{
+    display: block;
+    border-left: none;
+    border-bottom: 1px solid #ffffff;
+}
+.headermenu ul li ul li:last-child{
+    border-right:  none;
+}
+.headermenu ul li ul li:first-child{
+    border-top: 1px solid #ffffff;
+}
+.headermenu ul li:hover ul{
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.unorder,.order{
+    margin: 30px 50px;
+}
+.unorder{
+    list-style-type: square;
+    list-style-position: inside;
+}
+.order{
+    list-style-type:lower-greek;
+    list-style-position: outside;
+}
+.icon .socialicon{
+    text-align: center;
+    margin-top: 25px;
+
+}
+.icon .socialicon li{
+    display: inline-block;
+}
+.icon .socialicon li a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #5ea5fa;
+    color: rgb(20, 15, 15);
+}
+.icon .socialicon li a:hover{
+    background-color: #2980b9;
+}
